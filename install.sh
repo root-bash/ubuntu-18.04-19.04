@@ -4,15 +4,10 @@
 # Each and every menu will download the script from the server and run in the machine.
 
 chmod -R 777 dns.sh
-clear
 chmod -R 777 apache2.sh
-clear
 chmod -R 777 php7.2.sh
-clear
 chmod -R 777 php7.3.sh
-clear
 chmod -R 777 mysql.sh
-clear
 chmod -R 777 mariadb.sh
 clear
 echo "#############################################################"
