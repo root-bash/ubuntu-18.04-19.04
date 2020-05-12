@@ -1,6 +1,18 @@
-*/ To create an user, use this command
+# To create database, use this command 
+
+CREATE DATABASE <database_name>;
+
+
+# delet database, use this command
+
+DROP DATABASE <database_name>;
+
+
+# To create an user, use this command
 
 CREATE USER 'user_name'@'localhost' IDENTIFIED BY 'password';
 
+
+# database access permission
 
 GRANT ALL PRIVILEGES ON *.* TO 'user_name'@'localhost' IDENTIFIED BY PASSWORD 'password';
