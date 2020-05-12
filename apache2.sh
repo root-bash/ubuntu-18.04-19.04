@@ -47,3 +47,5 @@ systemctl restart apache2.service
 a2ensite 000-default.conf
 a2enmod rewrite
 systemctl restart apache2.service
+echo ""
+echo ""
