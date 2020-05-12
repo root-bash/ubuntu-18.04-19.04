@@ -25,7 +25,7 @@ echo "**************************************************************************
 echo "         Please complete the configuration in the database: ----           "
 echo "***************************************************************************"
 echo ""
-echo "Enter the mysql user password: ----"
+echo "Enter the database root password: ----"
 echo ""
 read PASSWORD
 echo ""
