@@ -16,6 +16,14 @@ systemctl enable mysql.service
 
 mysql_secure_installation
 
+
+clear
+echo ""
+echo ""
+echo ""
+echo "***************************************************************************"
+echo "         Please complete the configuration in the database: ----           "
+echo "***************************************************************************"
 echo ""
 echo "Enter the mysql user password: ----"
 echo ""
