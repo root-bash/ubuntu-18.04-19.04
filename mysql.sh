@@ -52,9 +52,6 @@ echo ""
 read DB
 mysql -u USER -p$PASSWORD -e "CREATE DATABASE $DB;"
 
-
-
-
 echo "---------------------------------------------"
 echo ""
 echo ""
