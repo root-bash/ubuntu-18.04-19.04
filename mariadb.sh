@@ -42,15 +42,15 @@ echo ""
 read USER_PASSWORD
 echo ""
 echo ""
-mysql -u USER -p$PASSWORD -e "CREATE USER '$CREATE_USER_NAME'@'localhost' IDENTIFIED BY '$USER_PASSWORD';"
-mysql -u USER -p$PASSWORD -e "GRANT ALL PRIVILEGES ON *.* TO '$CREATE_USER_NAME'@'localhost' IDENTIFIED BY '$USER_PASSWORD';"
+mysql -u root -p$PASSWORD -e "CREATE USER '$CREATE_USER_NAME'@'localhost' IDENTIFIED BY '$USER_PASSWORD';"
+mysql -u root -p$PASSWORD -e "GRANT ALL PRIVILEGES ON *.* TO '$CREATE_USER_NAME'@'localhost' IDENTIFIED BY '$USER_PASSWORD';"
 
 
 echo ""
 echo "Please Enter the database name: ----"
 echo ""
 read DB
-mysql -u USER -p$PASSWORD -e "CREATE DATABASE $DB;"
+mysql -u root -p$PASSWORD -e "CREATE DATABASE $DB;"
 
 echo "---------------------------------------------"
 echo ""
