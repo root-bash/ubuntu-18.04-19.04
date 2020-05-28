@@ -22,24 +22,18 @@ echo ""
 echo ""
 echo ""
 echo "***************************************************************************"
-echo "         Please complete the configuration in the database: ----           "
+echo -e "\e[1;32mPlease complete the configuration in the database: ----  \e[0m  "
 echo "***************************************************************************"
 echo ""
-echo "Enter the database root password: ----"
-echo ""
-read PASSWORD
+echo -n -e "\e[1;33mEnter the database root password: ---- \e[0m "; read PASSWORD
 echo ""
 
 # To create an new user id and password in the database
 echo ""
-echo "Enter the new user id: ----"
-echo ""
-read CREATE_USER_NAME
+echo -n -e "\e[1;33mEnter the new user id: ---- \e[0m "; read CREATE_USER_NAME
 echo ""
 echo ""
-echo "Enter the new user password: ----"
-echo ""
-read USER_PASSWORD
+echo -n -e "\e[1;33mEnter the new user password: ---- \e[0m "; read USER_PASSWORD
 echo ""
 echo ""
 mysql -u root -p$PASSWORD -e "CREATE USER '$CREATE_USER_NAME'@'localhost' IDENTIFIED BY '$USER_PASSWORD';"
@@ -47,9 +41,7 @@ mysql -u root -p$PASSWORD -e "GRANT ALL PRIVILEGES ON *.* TO '$CREATE_USER_NAME'
 
 
 echo ""
-echo "Please Enter the database name: ----"
-echo ""
-read DB
+echo -n -e "\e[1;33mPlease Enter the database name: ---- \e[0m "; read DB
 mysql -u root -p$PASSWORD -e "CREATE DATABASE $DB;"
 
 echo "---------------------------------------------"
