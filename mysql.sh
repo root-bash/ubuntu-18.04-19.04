@@ -25,25 +25,21 @@ echo "**************************************************************************
 echo -e "   \e[1;32mPlease complete the configuration in the database: ----  \e[0m  "
 echo "***************************************************************************"
 echo ""
-echo -n -e "  \e[1;32mEnter the database root password: ----  "
-read PASSWORD
+echo -n -e "  \e[1;32mEnter the database root password: ----  "; read PASSWORD
 echo ""
 
 # To create an new user id and password in the database
 echo ""
-echo -n -e "  \e[1;32mEnter the new user id: ----   \e[0m"
-read CREATE_USER_NAME
+echo -n -e "  \e[1;32mEnter the new user id: ----   \e[0m"; read CREATE_USER_NAME
 echo ""
 echo ""
-echo -n -e "  \e[1;32mEnter the new user password: ----  \e[0m"
-read USER_PASSWORD
+echo -n -e "  \e[1;32mEnter the new user password: ----  \e[0m"; read USER_PASSWORD
 echo ""
 echo ""
 
 
 echo ""
-echo -n -e "  \e[1;32mPlease Enter the database name: ----  \e[0m"
-read DB
+echo -n -e "  \e[1;32mPlease Enter the database name: ----  \e[0m"; read DB
 echo ""
 
 # To create a Database. 
