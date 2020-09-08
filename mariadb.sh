@@ -36,14 +36,16 @@ echo ""
 echo -n -e "\e[1;33mEnter the new user password: ---- \e[0m "; read USER_PASSWORD
 echo ""
 echo ""
+echo -n -e "\e[1;33mPlease Enter the database name: ---- \e[0m "; read DB
+echo ""
+echo ""
+echo ""
+echo ""
+mysql -u root -p$PASSWORD -e "CREATE DATABASE $DB;"
 mysql -u root -p$PASSWORD -e "CREATE USER '$CREATE_USER_NAME'@'localhost' IDENTIFIED BY '$USER_PASSWORD';"
 mysql -u root -p$PASSWORD -e "GRANT ALL PRIVILEGES ON *.* TO '$CREATE_USER_NAME'@'localhost' IDENTIFIED BY '$USER_PASSWORD';"
 
-
 echo ""
-echo -n -e "\e[1;33mPlease Enter the database name: ---- \e[0m "; read DB
-mysql -u root -p$PASSWORD -e "CREATE DATABASE $DB;"
-
 echo "---------------------------------------------"
 echo ""
 echo ""
