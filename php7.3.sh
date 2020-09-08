@@ -6,13 +6,21 @@
 
 
 apt update -y
+apt get-update -y
 apt install openssh-server -y
 
 apt install software-properties-common -y
 add-apt-repository ppa:ondrej/php
 
 apt update -y
+apt get-update -y
 
+# for git and composer
+apt install git -y
+apt install composer -y
+
+
+# for php 7.3 
 apt install libapache2-mod-php7.3 -y
 apt install libapache2-mod-php7.3-dbgsym -y
 apt install libphp7.3-embed -y
